@@ -22,6 +22,7 @@ from sqlalchemy import select, delete
 
 
 app = Flask(__name__) #creating and instance of our flask app
+                                                                #user pw     host      db
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql+mysqlconnector://root:BAC146@localhost/ecomm_db'
 
 class Base(DeclarativeBase):
